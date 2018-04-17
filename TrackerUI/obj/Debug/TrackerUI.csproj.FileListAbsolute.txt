@@ -1,0 +1,14 @@
+c:\users\ngdotcom\source\repos\TournamentTracker\TrackerUI\bin\Debug\TrackerUI.exe.config
+c:\users\ngdotcom\source\repos\TournamentTracker\TrackerUI\bin\Debug\TrackerUI.exe
+c:\users\ngdotcom\source\repos\TournamentTracker\TrackerUI\bin\Debug\TrackerUI.pdb
+c:\users\ngdotcom\source\repos\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.csprojResolveAssemblyReference.cache
+c:\users\ngdotcom\source\repos\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.Properties.Resources.resources
+c:\users\ngdotcom\source\repos\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.csproj.GenerateResource.Cache
+c:\users\ngdotcom\source\repos\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.csproj.CoreCompileInputs.cache
+c:\users\ngdotcom\source\repos\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.exe
+c:\users\ngdotcom\source\repos\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.pdb
+c:\users\ngdotcom\source\repos\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.CreateTournamentForm.resources
+c:\users\ngdotcom\source\repos\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.CreatePrize.resources
+c:\users\ngdotcom\source\repos\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.CreateTeam.resources
+c:\users\ngdotcom\source\repos\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.TournamentsDashboard.resources
+c:\users\ngdotcom\source\repos\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.TournamentsDashboardForm.resources
