@@ -12,3 +12,7 @@ c:\users\ngdotcom\source\repos\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.C
 c:\users\ngdotcom\source\repos\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.CreateTeam.resources
 c:\users\ngdotcom\source\repos\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.TournamentsDashboard.resources
 c:\users\ngdotcom\source\repos\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.TournamentsDashboardForm.resources
+C:\Users\ngdotcom\source\repos\TournamentTracker\TrackerUI\bin\Debug\TrackerLibrary.dll
+C:\Users\ngdotcom\source\repos\TournamentTracker\TrackerUI\bin\Debug\TrackerLibrary.pdb
+C:\Users\ngdotcom\source\repos\TournamentTracker\TrackerUI\bin\Debug\Dapper.dll
+C:\Users\ngdotcom\source\repos\TournamentTracker\TrackerUI\bin\Debug\Dapper.xml

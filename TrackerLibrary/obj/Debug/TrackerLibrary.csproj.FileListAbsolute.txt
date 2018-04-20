@@ -4,3 +4,5 @@ c:\users\ngdotcom\source\repos\TournamentTracker\TrackerLibrary\bin\Debug\Tracke
 c:\users\ngdotcom\source\repos\TournamentTracker\TrackerLibrary\bin\Debug\TrackerLibrary.pdb
 c:\users\ngdotcom\source\repos\TournamentTracker\TrackerLibrary\obj\Debug\TrackerLibrary.dll
 c:\users\ngdotcom\source\repos\TournamentTracker\TrackerLibrary\obj\Debug\TrackerLibrary.pdb
+C:\Users\ngdotcom\source\repos\TournamentTracker\TrackerLibrary\bin\Debug\Dapper.dll
+C:\Users\ngdotcom\source\repos\TournamentTracker\TrackerLibrary\bin\Debug\Dapper.xml

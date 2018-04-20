@@ -47,7 +47,7 @@
             this.createPrizeLabel.Font = new System.Drawing.Font("Arial Narrow", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.createPrizeLabel.Location = new System.Drawing.Point(12, 9);
             this.createPrizeLabel.Name = "createPrizeLabel";
-            this.createPrizeLabel.Size = new System.Drawing.Size(174, 40);
+            this.createPrizeLabel.Size = new System.Drawing.Size(169, 40);
             this.createPrizeLabel.TabIndex = 3;
             this.createPrizeLabel.Text = "Create Prize";
             // 
@@ -89,6 +89,7 @@
             this.priceAmountValue.Name = "priceAmountValue";
             this.priceAmountValue.Size = new System.Drawing.Size(100, 22);
             this.priceAmountValue.TabIndex = 16;
+            this.priceAmountValue.Text = "0";
             // 
             // prizeAmountLabel
             // 
@@ -105,6 +106,7 @@
             this.prizePercentageValue.Name = "prizePercentageValue";
             this.prizePercentageValue.Size = new System.Drawing.Size(100, 22);
             this.prizePercentageValue.TabIndex = 18;
+            this.prizePercentageValue.Text = "0";
             // 
             // pricePercentageLabel
             // 
@@ -134,6 +136,7 @@
             this.createPriceBtn.TabIndex = 20;
             this.createPriceBtn.Text = "Create Price";
             this.createPriceBtn.UseVisualStyleBackColor = false;
+            this.createPriceBtn.Click += new System.EventHandler(this.createPriceBtn_Click);
             // 
             // CreatePrize
             // 
