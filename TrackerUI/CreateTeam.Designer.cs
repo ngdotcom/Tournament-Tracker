@@ -35,15 +35,15 @@
             this.selectTeamMemberDropdown = new System.Windows.Forms.ComboBox();
             this.addTeamMemBtn = new System.Windows.Forms.Button();
             this.addNewMemberBox = new System.Windows.Forms.GroupBox();
-            this.newMemFname = new System.Windows.Forms.TextBox();
-            this.firstNameLabel = new System.Windows.Forms.Label();
-            this.newMemLname = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.emailText = new System.Windows.Forms.TextBox();
-            this.emailLabel = new System.Windows.Forms.Label();
+            this.createMemBtn = new System.Windows.Forms.Button();
             this.cellphoneValue = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.createMemBtn = new System.Windows.Forms.Button();
+            this.emailValue = new System.Windows.Forms.TextBox();
+            this.emailLabel = new System.Windows.Forms.Label();
+            this.lastNameValue = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.firstNameValue = new System.Windows.Forms.TextBox();
+            this.firstNameLabel = new System.Windows.Forms.Label();
             this.teamMemListbox = new System.Windows.Forms.ListBox();
             this.deleteMemBtn = new System.Windows.Forms.Button();
             this.createTemBtn = new System.Windows.Forms.Button();
@@ -56,7 +56,7 @@
             this.createTeamLabel.Font = new System.Drawing.Font("Arial Narrow", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.createTeamLabel.Location = new System.Drawing.Point(12, 26);
             this.createTeamLabel.Name = "createTeamLabel";
-            this.createTeamLabel.Size = new System.Drawing.Size(190, 40);
+            this.createTeamLabel.Size = new System.Drawing.Size(185, 40);
             this.createTeamLabel.TabIndex = 2;
             this.createTeamLabel.Text = "Create Team:";
             // 
@@ -109,11 +109,11 @@
             this.addNewMemberBox.Controls.Add(this.createMemBtn);
             this.addNewMemberBox.Controls.Add(this.cellphoneValue);
             this.addNewMemberBox.Controls.Add(this.label2);
-            this.addNewMemberBox.Controls.Add(this.emailText);
+            this.addNewMemberBox.Controls.Add(this.emailValue);
             this.addNewMemberBox.Controls.Add(this.emailLabel);
-            this.addNewMemberBox.Controls.Add(this.newMemLname);
+            this.addNewMemberBox.Controls.Add(this.lastNameValue);
             this.addNewMemberBox.Controls.Add(this.label1);
-            this.addNewMemberBox.Controls.Add(this.newMemFname);
+            this.addNewMemberBox.Controls.Add(this.firstNameValue);
             this.addNewMemberBox.Controls.Add(this.firstNameLabel);
             this.addNewMemberBox.Location = new System.Drawing.Point(19, 263);
             this.addNewMemberBox.Name = "addNewMemberBox";
@@ -122,53 +122,17 @@
             this.addNewMemberBox.TabStop = false;
             this.addNewMemberBox.Text = "Add New Member";
             // 
-            // newMemFname
+            // createMemBtn
             // 
-            this.newMemFname.Location = new System.Drawing.Point(87, 30);
-            this.newMemFname.Name = "newMemFname";
-            this.newMemFname.Size = new System.Drawing.Size(100, 22);
-            this.newMemFname.TabIndex = 10;
-            // 
-            // firstNameLabel
-            // 
-            this.firstNameLabel.AutoSize = true;
-            this.firstNameLabel.Location = new System.Drawing.Point(6, 35);
-            this.firstNameLabel.Name = "firstNameLabel";
-            this.firstNameLabel.Size = new System.Drawing.Size(76, 17);
-            this.firstNameLabel.TabIndex = 9;
-            this.firstNameLabel.Text = "First Name";
-            // 
-            // newMemLname
-            // 
-            this.newMemLname.Location = new System.Drawing.Point(87, 59);
-            this.newMemLname.Name = "newMemLname";
-            this.newMemLname.Size = new System.Drawing.Size(100, 22);
-            this.newMemLname.TabIndex = 12;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 64);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 17);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Last Name";
-            // 
-            // emailText
-            // 
-            this.emailText.Location = new System.Drawing.Point(87, 87);
-            this.emailText.Name = "emailText";
-            this.emailText.Size = new System.Drawing.Size(100, 22);
-            this.emailText.TabIndex = 14;
-            // 
-            // emailLabel
-            // 
-            this.emailLabel.AutoSize = true;
-            this.emailLabel.Location = new System.Drawing.Point(6, 92);
-            this.emailLabel.Name = "emailLabel";
-            this.emailLabel.Size = new System.Drawing.Size(42, 17);
-            this.emailLabel.TabIndex = 13;
-            this.emailLabel.Text = "Email";
+            this.createMemBtn.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.createMemBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.createMemBtn.Location = new System.Drawing.Point(35, 143);
+            this.createMemBtn.Name = "createMemBtn";
+            this.createMemBtn.Size = new System.Drawing.Size(148, 34);
+            this.createMemBtn.TabIndex = 18;
+            this.createMemBtn.Text = "Create Member";
+            this.createMemBtn.UseVisualStyleBackColor = false;
+            this.createMemBtn.Click += new System.EventHandler(this.createMemBtn_Click);
             // 
             // cellphoneValue
             // 
@@ -186,16 +150,53 @@
             this.label2.TabIndex = 15;
             this.label2.Text = "Cell Phone";
             // 
-            // createMemBtn
+            // emailValue
             // 
-            this.createMemBtn.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.createMemBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.createMemBtn.Location = new System.Drawing.Point(35, 143);
-            this.createMemBtn.Name = "createMemBtn";
-            this.createMemBtn.Size = new System.Drawing.Size(148, 34);
-            this.createMemBtn.TabIndex = 18;
-            this.createMemBtn.Text = "Create Member";
-            this.createMemBtn.UseVisualStyleBackColor = false;
+            this.emailValue.Location = new System.Drawing.Point(87, 87);
+            this.emailValue.Name = "emailValue";
+            this.emailValue.Size = new System.Drawing.Size(100, 22);
+            this.emailValue.TabIndex = 14;
+            // 
+            // emailLabel
+            // 
+            this.emailLabel.AutoSize = true;
+            this.emailLabel.Location = new System.Drawing.Point(6, 92);
+            this.emailLabel.Name = "emailLabel";
+            this.emailLabel.Size = new System.Drawing.Size(42, 17);
+            this.emailLabel.TabIndex = 13;
+            this.emailLabel.Text = "Email";
+            // 
+            // lastNameValue
+            // 
+            this.lastNameValue.Location = new System.Drawing.Point(87, 59);
+            this.lastNameValue.Name = "lastNameValue";
+            this.lastNameValue.Size = new System.Drawing.Size(100, 22);
+            this.lastNameValue.TabIndex = 12;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 64);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(76, 17);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Last Name";
+            // 
+            // firstNameValue
+            // 
+            this.firstNameValue.Location = new System.Drawing.Point(87, 30);
+            this.firstNameValue.Name = "firstNameValue";
+            this.firstNameValue.Size = new System.Drawing.Size(100, 22);
+            this.firstNameValue.TabIndex = 10;
+            // 
+            // firstNameLabel
+            // 
+            this.firstNameLabel.AutoSize = true;
+            this.firstNameLabel.Location = new System.Drawing.Point(6, 35);
+            this.firstNameLabel.Name = "firstNameLabel";
+            this.firstNameLabel.Size = new System.Drawing.Size(76, 17);
+            this.firstNameLabel.TabIndex = 9;
+            this.firstNameLabel.Text = "First Name";
             // 
             // teamMemListbox
             // 
@@ -265,11 +266,11 @@
         private System.Windows.Forms.Button createMemBtn;
         private System.Windows.Forms.TextBox cellphoneValue;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox emailText;
+        private System.Windows.Forms.TextBox emailValue;
         private System.Windows.Forms.Label emailLabel;
-        private System.Windows.Forms.TextBox newMemLname;
+        private System.Windows.Forms.TextBox lastNameValue;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox newMemFname;
+        private System.Windows.Forms.TextBox firstNameValue;
         private System.Windows.Forms.Label firstNameLabel;
         private System.Windows.Forms.ListBox teamMemListbox;
         private System.Windows.Forms.Button deleteMemBtn;
