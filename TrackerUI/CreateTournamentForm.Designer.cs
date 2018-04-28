@@ -38,7 +38,7 @@
             this.createNewTeamLabelLink = new System.Windows.Forms.LinkLabel();
             this.addTeamBtn = new System.Windows.Forms.Button();
             this.createPrizeBtn = new System.Windows.Forms.Button();
-            this.tournamentPlayersListbox = new System.Windows.Forms.ListBox();
+            this.tournamentTeamsListbox = new System.Windows.Forms.ListBox();
             this.teamNplayersLabel = new System.Windows.Forms.Label();
             this.deleteSelectedPrizesBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,7 +53,7 @@
             this.createTournamentLabel.Font = new System.Drawing.Font("Arial Narrow", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.createTournamentLabel.Location = new System.Drawing.Point(12, 31);
             this.createTournamentLabel.Name = "createTournamentLabel";
-            this.createTournamentLabel.Size = new System.Drawing.Size(271, 40);
+            this.createTournamentLabel.Size = new System.Drawing.Size(262, 40);
             this.createTournamentLabel.TabIndex = 1;
             this.createTournamentLabel.Text = "Create Tournament:";
             // 
@@ -79,6 +79,7 @@
             this.entryFeeText.Name = "entryFeeText";
             this.entryFeeText.Size = new System.Drawing.Size(129, 39);
             this.entryFeeText.TabIndex = 12;
+            this.entryFeeText.Text = "0";
             // 
             // entryFeeLabel
             // 
@@ -127,6 +128,7 @@
             this.addTeamBtn.TabIndex = 16;
             this.addTeamBtn.Text = "Add Team";
             this.addTeamBtn.UseVisualStyleBackColor = false;
+            this.addTeamBtn.Click += new System.EventHandler(this.addTeamBtn_Click);
             // 
             // createPrizeBtn
             // 
@@ -139,14 +141,14 @@
             this.createPrizeBtn.Text = "Create Prize";
             this.createPrizeBtn.UseVisualStyleBackColor = false;
             // 
-            // tournamentPlayersListbox
+            // tournamentTeamsListbox
             // 
-            this.tournamentPlayersListbox.FormattingEnabled = true;
-            this.tournamentPlayersListbox.ItemHeight = 32;
-            this.tournamentPlayersListbox.Location = new System.Drawing.Point(348, 44);
-            this.tournamentPlayersListbox.Name = "tournamentPlayersListbox";
-            this.tournamentPlayersListbox.Size = new System.Drawing.Size(364, 196);
-            this.tournamentPlayersListbox.TabIndex = 18;
+            this.tournamentTeamsListbox.FormattingEnabled = true;
+            this.tournamentTeamsListbox.ItemHeight = 32;
+            this.tournamentTeamsListbox.Location = new System.Drawing.Point(348, 44);
+            this.tournamentTeamsListbox.Name = "tournamentTeamsListbox";
+            this.tournamentTeamsListbox.Size = new System.Drawing.Size(364, 196);
+            this.tournamentTeamsListbox.TabIndex = 18;
             // 
             // teamNplayersLabel
             // 
@@ -173,9 +175,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(342, 256);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(197, 32);
+            this.label1.Size = new System.Drawing.Size(92, 32);
             this.label1.TabIndex = 22;
-            this.label1.Text = "Team / Players";
+            this.label1.Text = "Prizes";
             // 
             // prizesListBox
             // 
@@ -218,7 +220,7 @@
             this.Controls.Add(this.prizesListBox);
             this.Controls.Add(this.deleteSelectedPrizesBtn);
             this.Controls.Add(this.teamNplayersLabel);
-            this.Controls.Add(this.tournamentPlayersListbox);
+            this.Controls.Add(this.tournamentTeamsListbox);
             this.Controls.Add(this.createPrizeBtn);
             this.Controls.Add(this.addTeamBtn);
             this.Controls.Add(this.createNewTeamLabelLink);
@@ -230,7 +232,7 @@
             this.Controls.Add(this.tournamentNameLabel);
             this.Controls.Add(this.createTournamentLabel);
             this.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "CreateTournamentForm";
             this.Text = "Create Tournament";
             this.ResumeLayout(false);
@@ -250,7 +252,7 @@
         private System.Windows.Forms.LinkLabel createNewTeamLabelLink;
         private System.Windows.Forms.Button addTeamBtn;
         private System.Windows.Forms.Button createPrizeBtn;
-        private System.Windows.Forms.ListBox tournamentPlayersListbox;
+        private System.Windows.Forms.ListBox tournamentTeamsListbox;
         private System.Windows.Forms.Label teamNplayersLabel;
         private System.Windows.Forms.Button deleteSelectedPrizesBtn;
         private System.Windows.Forms.Label label1;

@@ -12,12 +12,12 @@ using TrackerLibrary.Models;
 
 namespace TrackerUI
 {
-    public partial class CreateTeam : Form
+    public partial class CreateTournammentFrom : Form
     {
         private List<PersonModel> availableTeamMembers = GlobalConfig.Connections.GetPerson_All();
         private List<PersonModel> selectedTeamMembers = new List<PersonModel>();
 
-        public CreateTeam()
+        public CreateTournammentFrom()
         {
             InitializeComponent();
 
