@@ -45,7 +45,7 @@
             this.firstNameValue = new System.Windows.Forms.TextBox();
             this.firstNameLabel = new System.Windows.Forms.Label();
             this.teamMemListbox = new System.Windows.Forms.ListBox();
-            this.deleteMemBtn = new System.Windows.Forms.Button();
+            this.removeMemBtn = new System.Windows.Forms.Button();
             this.createTemBtn = new System.Windows.Forms.Button();
             this.addNewMemberBox.SuspendLayout();
             this.SuspendLayout();
@@ -103,6 +103,7 @@
             this.addTeamMemBtn.TabIndex = 17;
             this.addTeamMemBtn.Text = "Add Member";
             this.addTeamMemBtn.UseVisualStyleBackColor = false;
+            this.addTeamMemBtn.Click += new System.EventHandler(this.addTeamMemBtn_Click);
             // 
             // addNewMemberBox
             // 
@@ -207,16 +208,17 @@
             this.teamMemListbox.Size = new System.Drawing.Size(290, 340);
             this.teamMemListbox.TabIndex = 19;
             // 
-            // deleteMemBtn
+            // removeMemBtn
             // 
-            this.deleteMemBtn.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.deleteMemBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteMemBtn.Location = new System.Drawing.Point(321, 26);
-            this.deleteMemBtn.Name = "deleteMemBtn";
-            this.deleteMemBtn.Size = new System.Drawing.Size(219, 40);
-            this.deleteMemBtn.TabIndex = 20;
-            this.deleteMemBtn.Text = "Delete Selected Member";
-            this.deleteMemBtn.UseVisualStyleBackColor = false;
+            this.removeMemBtn.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.removeMemBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeMemBtn.Location = new System.Drawing.Point(321, 26);
+            this.removeMemBtn.Name = "removeMemBtn";
+            this.removeMemBtn.Size = new System.Drawing.Size(219, 40);
+            this.removeMemBtn.TabIndex = 20;
+            this.removeMemBtn.Text = "Remove Selected Member";
+            this.removeMemBtn.UseVisualStyleBackColor = false;
+            this.removeMemBtn.Click += new System.EventHandler(this.removeMemBtn_Click);
             // 
             // createTemBtn
             // 
@@ -228,6 +230,7 @@
             this.createTemBtn.TabIndex = 21;
             this.createTemBtn.Text = "Create Team";
             this.createTemBtn.UseVisualStyleBackColor = false;
+            this.createTemBtn.Click += new System.EventHandler(this.createTemBtn_Click);
             // 
             // CreateTeam
             // 
@@ -236,7 +239,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(746, 470);
             this.Controls.Add(this.createTemBtn);
-            this.Controls.Add(this.deleteMemBtn);
+            this.Controls.Add(this.removeMemBtn);
             this.Controls.Add(this.teamMemListbox);
             this.Controls.Add(this.addNewMemberBox);
             this.Controls.Add(this.addTeamMemBtn);
@@ -273,7 +276,7 @@
         private System.Windows.Forms.TextBox firstNameValue;
         private System.Windows.Forms.Label firstNameLabel;
         private System.Windows.Forms.ListBox teamMemListbox;
-        private System.Windows.Forms.Button deleteMemBtn;
+        private System.Windows.Forms.Button removeMemBtn;
         private System.Windows.Forms.Button createTemBtn;
     }
 }
