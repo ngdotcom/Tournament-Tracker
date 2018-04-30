@@ -12,15 +12,18 @@ using TrackerLibrary.Models;
 
 namespace TrackerUI
 {
-    public partial class CreateTournammentFrom : Form
+    //Correct name is Create Team Form
+    public partial class CreateTeamFrom : Form
     {
         private List<PersonModel> availableTeamMembers = GlobalConfig.Connections.GetPerson_All();
         private List<PersonModel> selectedTeamMembers = new List<PersonModel>();
+        private ITeamRequester callingForm;
 
-        public CreateTournammentFrom()
+        public CreateTeamFrom(ITeamRequester caller)
         {
             InitializeComponent();
 
+            callingForm = caller;
             //CreateSampleData();
 
             WireUpLists();
@@ -127,9 +130,10 @@ namespace TrackerUI
             t.TeamName = teamNameText.Text;
             t.TeamMembers = selectedTeamMembers;
 
-            t = GlobalConfig.Connections.CreateTeam(t);
+            GlobalConfig.Connections.CreateTeam(t);
+            callingForm.TeamComplete(t);
 
-            // TODO - If we arent;y this form after creation, reset the form 
-        }
+            this.Close();
+         }
     }
 }
