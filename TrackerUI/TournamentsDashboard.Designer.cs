@@ -41,7 +41,7 @@
             this.createPrizeLabel.Font = new System.Drawing.Font("Arial Narrow", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.createPrizeLabel.Location = new System.Drawing.Point(26, 35);
             this.createPrizeLabel.Name = "createPrizeLabel";
-            this.createPrizeLabel.Size = new System.Drawing.Size(317, 40);
+            this.createPrizeLabel.Size = new System.Drawing.Size(305, 40);
             this.createPrizeLabel.TabIndex = 4;
             this.createPrizeLabel.Text = "Tournament Dashboard";
             // 
@@ -84,6 +84,7 @@
             this.createTournBtn.TabIndex = 22;
             this.createTournBtn.Text = "Create Tournament";
             this.createTournBtn.UseVisualStyleBackColor = false;
+            this.createTournBtn.Click += new System.EventHandler(this.createTournBtn_Click);
             // 
             // TournamentsDashboard
             // 

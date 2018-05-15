@@ -121,5 +121,13 @@ namespace TrackerLibrary.DataAccess
             tournaments.SaveToTournamentFile(TournamentsFile);
 
         }
+
+        public List<TournamentModel> GetTournament_All()
+        {
+            return TournamentsFile.
+                FullFilePath()
+                .LoadFile()
+                .ConvertToTournamentsModels(TeamFile, PeopleFile, PrizesFile); 
+        }
     }
 }
