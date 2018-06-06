@@ -50,7 +50,7 @@
             this.tournamentLabel.Font = new System.Drawing.Font("Arial Narrow", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tournamentLabel.Location = new System.Drawing.Point(13, 33);
             this.tournamentLabel.Name = "tournamentLabel";
-            this.tournamentLabel.Size = new System.Drawing.Size(178, 40);
+            this.tournamentLabel.Size = new System.Drawing.Size(172, 40);
             this.tournamentLabel.TabIndex = 0;
             this.tournamentLabel.Text = "Tournament:";
             // 
@@ -60,7 +60,7 @@
             this.tournamentNameLabel.Font = new System.Drawing.Font("Arial Narrow", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tournamentNameLabel.Location = new System.Drawing.Point(197, 33);
             this.tournamentNameLabel.Name = "tournamentNameLabel";
-            this.tournamentNameLabel.Size = new System.Drawing.Size(113, 40);
+            this.tournamentNameLabel.Size = new System.Drawing.Size(109, 40);
             this.tournamentNameLabel.TabIndex = 1;
             this.tournamentNameLabel.Text = "<none>";
             // 
@@ -168,10 +168,10 @@
             this.scoreBtn.Name = "scoreBtn";
             this.scoreBtn.Size = new System.Drawing.Size(124, 49);
             this.scoreBtn.TabIndex = 13;
-            this.scoreBtn.Text = "Score";
+            this.scoreBtn.Text = "Submit Score";
             this.scoreBtn.UseVisualStyleBackColor = false;
             // 
-            // TournamentViewerForm
+            // TournamentsDashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -193,7 +193,7 @@
             this.Controls.Add(this.tournamentLabel);
             this.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.Name = "TournamentViewerForm";
+            this.Name = "TournamentsDashboardForm";
             this.Text = "Tournament Viewer";
             this.ResumeLayout(false);
             this.PerformLayout();
